@@ -14,13 +14,6 @@
 		
 	}
 	
-	.tombol {
-		
-		background-color: yellow;
-		padding:10px;
-		border-radius:15px;
-
-	}
 	
 	hr {
 		border: 2px solid green;
@@ -63,19 +56,57 @@
 		font-weight: bold;
 	}
 
-	.kepala {
+	.siswa {
+		background:url('icons/siswa-1.png') 10em no-repeat;
 		background-color: yellow;
 		height: 50px;
 		border-radius: 20px 20px 0 0;
+		text-align:center;
+		font-size:12px;
 	}
+
+	.ortu {
+	background:url('icons/ortu.png') 8em no-repeat;
+		background-color: yellow;
+		height: 50px;
+		border-radius: 20px 20px 0 0;
+		text-align:center;
+	}
+
+	img {
+		width:5px;
+		height:5px;
+	}
+
+	
+	.simpan {
+		background:url('icons/simpan.png') no-repeat;
+		height: 64px;
+		width: 64px;
+		
+	}
+	
+	.reset {
+		background:url('icons/reset.png') no-repeat;
+		height: 100px;
+		width: 100px;
+		
+	}
+
+	.proses {
+		background-color: yellow;
+		padding:10px;
+		border-radius:15px;
+
+	}
+	
 	</style>
 </head>
 <body>
-
 <form action="#">
 <table class="tb">
 									
-	<tr><td colspan="4" class="kepala"><center> DATA SISWA</center></td></tr>
+	<tr><td colspan="4" class="siswa">DATA SISWA</td></tr>
 	<tr><td></td></tr>
 	<tr><td></td></tr>
 	<tr><td>NIS</td><td> :</td> <td><input type="text" placeholder="isikan nis" name="nama" required></td></tr>
@@ -92,9 +123,9 @@
 														<option value="Hindu">Hindu</option>
 														<option value="Kunghoco">Kunghoco</option>							
 									  </select></td></tr>
-	<tr><td>ALAMAT</td><td> :</td> <td><textarea name="alamat" required></textarea></td></tr>
-	<tr><td>NO. HP</td><td> :</td> <td><input type="text" placeholder="isikan No. HP" name="nama" required></td></tr>
-	<tr><td>ASAL SMP</td><td> :</td> <td><input type="text" placeholder="isikan nama" name="nama" required></td></tr>
+	<tr><td>ALAMAT</td><td> :</td> <td><textarea name="alamat" placeholder="isikan alamat lengkap" required></textarea></td></tr>
+	<tr><td>NO. HP</td><td> :</td> <td><input type="text" placeholder="isikan No. HP" name="hp" required></td></tr>
+	<tr><td>ASAL SMP</td><td> :</td> <td><input type="text" placeholder="isikan nama" name="asl_smp" required></td></tr>
 	<tr><td>KELAS</td><td> :</td> <td><select name="kelas" id="">
 											<option value="">- Silahkan Pilih Kelas -</option>
 											<option value="X A TKJ ">X A TKJ </option>
@@ -122,17 +153,17 @@
 	</select></td></tr>		
 	<tr><td></td></tr>
 	<tr><td></td></tr>
-	<tr><td colspan="4" class="kepala"><center> DATA ORANG TUA</center></td></tr>
+	<tr><td colspan="4" class="ortu"> DATA ORANG TUA</td></tr>
 	<tr><td></td></tr>
 	<tr><td></td></tr>
-	<tr><td>NAMA ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan nama orang tua" name="nama" required></td></tr>
-	<tr><td>ALAMAT ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan alamat orang tua" name="nama" required></td></tr>
-	<tr><td>NO HP  ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan no hp orang tua" name="nama" required></td></tr>
-	<tr><td>PEKERJAAN ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan pekerjaan orang tua" name="nama" required></td></tr>
-	<tr><td>PENGHASILAN ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan jumlah penghasilan orang tua" name="nama" required></td></tr>
+	<tr><td>NAMA ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan nama orang tua" name="nm_ortu" required></td></tr>
+	<tr><td>ALAMAT ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan alamat orang tua" name="alamat_ortu" required></td></tr>
+	<tr><td>NO HP  ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan no hp orang tua" name="hp_ortu" required></td></tr>
+	<tr><td>PEKERJAAN ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan pekerjaan orang tua" name="pek_ortu" required></td></tr>
+	<tr><td>PENGHASILAN ORANG TUA</td><td> :</td> <td><input type="text" placeholder="isikan jumlah penghasilan orang tua" name="hasil_ortu" required></td></tr>
 	<tr><td></td></tr>
 	<tr><td></td></tr>
-	<tr><td colspan="4" class="tombol"><input type="submit" class="submit" value="Simpan"> <input type="reset" class="reset" value="Batal"></td></tr>
+	<tr><td colspan="4" class="proses"><input type="submit" class="simpan" value=""></td></tr>
 </table>
 	
 </form>
